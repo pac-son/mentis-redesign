@@ -42,7 +42,7 @@ export default function Hero() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-sm font-semibold border-2 border-background"
+                    className="w-10 h-10 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center text-white text-sm font-semibold border-2 border-background"
                   >
                     {i}
                   </div>
@@ -57,7 +57,7 @@ export default function Hero() {
 
           {/* Right Image */}
           <div className="relative h-96 md:h-full min-h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl"></div>
+            <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl"></div>
             <img
               src="/healthcare-professional-consulting-with-patient-in.jpg"
               alt="Healthcare professional with patient"
