@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -19,17 +20,21 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Book Appointment
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary/10 bg-transparent"
-              >
-                Learn More
-              </Button>
+              <Link href="/book-appointment">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  Book Appointment
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link href="/#services">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center gap-4 pt-4">

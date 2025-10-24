@@ -1,4 +1,5 @@
-import { Heart } from "lucide-react"
+import { Heart, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -13,7 +14,45 @@ export default function Footer() {
               </div>
               <span className="font-bold text-lg">Mentis Clinic</span>
             </div>
-            <p className="text-sm opacity-75">Compassionate mental health and neurodiversity care for all.</p>
+            <p className="text-sm opacity-75 mb-4">Compassionate mental health and neurodiversity care for all.</p>
+            <div className="flex gap-4">
+              <a
+                href="https://facebook.com/mentisclinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 opacity-75 transition-opacity"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://twitter.com/mentisclinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 opacity-75 transition-opacity"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="https://instagram.com/mentisclinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 opacity-75 transition-opacity"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://linkedin.com/company/mentisclinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 opacity-75 transition-opacity"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -21,24 +60,24 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm opacity-75">
               <li>
-                <a href="#home" className="hover:opacity-100 transition-opacity">
+                <Link href="/#home" className="hover:opacity-100 transition-opacity">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="hover:opacity-100 transition-opacity">
+                <Link href="/#services" className="hover:opacity-100 transition-opacity">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#team" className="hover:opacity-100 transition-opacity">
+                <Link href="/#team" className="hover:opacity-100 transition-opacity">
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="hover:opacity-100 transition-opacity">
+                <Link href="/#about" className="hover:opacity-100 transition-opacity">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

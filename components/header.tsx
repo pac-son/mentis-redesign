@@ -13,27 +13,27 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline">Mentis Clinic</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/#home" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#team" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#team" className="text-foreground hover:text-primary transition-colors">
               Team
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
               About
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -52,18 +52,18 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/#home" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#team" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#team" className="text-foreground hover:text-primary transition-colors">
               Team
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
               About
-            </a>
+            </Link>
             <Link href="/book-appointment" className="w-full">
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                 Book Appointment

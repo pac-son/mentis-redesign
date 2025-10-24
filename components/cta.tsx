@@ -18,14 +18,16 @@ export default function CTA() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
-          >
-            <Phone className="mr-2 h-4 w-4" />
-            +92 300 8552215
-          </Button>
+          <a href="tel:+923008552215">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
+            >
+              <Phone className="mr-2 h-4 w-4" />
+              +92 300 8552215
+            </Button>
+          </a>
         </div>
 
         <p className="text-sm mt-8 opacity-75">Available Monday to Friday, 9 AM - 6 PM (Pakistan Standard Time)</p>
