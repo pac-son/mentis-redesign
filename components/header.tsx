@@ -4,9 +4,12 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/lib/language-context"
+import LanguageSelector from "@/components/language-selector"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
@@ -22,24 +25,24 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/#home" className="text-foreground hover:text-primary transition-colors">
-              Home
+            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+              {t("home")}
             </Link>
             <Link href="/#services" className="text-foreground hover:text-primary transition-colors">
-              Services
+              {t("services")}
             </Link>
-            <Link href="/#team" className="text-foreground hover:text-primary transition-colors">
-              Team
+            <Link href="/doctors" className="text-foreground hover:text-primary transition-colors">
+              {t("doctors")}
             </Link>
             <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
-              About
+              {t("about")}
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSelector />
             <Link href="/book-appointment">
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Book Appointment</Button>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">{t("bookAppointment")}</Button>
             </Link>
           </div>
 
@@ -52,21 +55,24 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
-            <Link href="/#home" className="text-foreground hover:text-primary transition-colors">
-              Home
+            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+              {t("home")}
             </Link>
             <Link href="/#services" className="text-foreground hover:text-primary transition-colors">
-              Services
+              {t("services")}
             </Link>
-            <Link href="/#team" className="text-foreground hover:text-primary transition-colors">
-              Team
+            <Link href="/doctors" className="text-foreground hover:text-primary transition-colors">
+              {t("doctors")}
             </Link>
             <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
-              About
+              {t("about")}
             </Link>
+            <div className="py-2">
+              <LanguageSelector />
+            </div>
             <Link href="/book-appointment" className="w-full">
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                Book Appointment
+                {t("bookAppointment")}
               </Button>
             </Link>
           </nav>

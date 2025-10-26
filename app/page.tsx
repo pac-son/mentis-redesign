@@ -3,6 +3,8 @@ import Hero from "@/components/hero"
 import Services from "@/components/services"
 import Stats from "@/components/stats"
 import Team from "@/components/team"
+import Process from "@/components/process"
+import Blog from "@/components/blog"
 import Values from "@/components/values"
 import CTA from "@/components/cta"
 import Footer from "@/components/footer"
@@ -16,8 +18,10 @@ export default function Home() {
       <Hero />
       <Stats />
       <Services />
-      <Values />
+      <Process />
       <Team />
+      <Blog />
+      <Values />
       <CTA />
       <Maps />
       <Footer />
