@@ -10,6 +10,9 @@ import CTA from "@/components/cta"
 import Footer from "@/components/footer"
 import AIChat from "@/components/ai-chat"
 import Maps from "@/components/maps"
+import Testimonials from "@/components/testimonials"
+import FAQ from "@/components/faq"
+import Newsletter from "@/components/newsletter"
 
 export default function Home() {
   return (
@@ -20,9 +23,12 @@ export default function Home() {
       <Services />
       <Process />
       <Team />
+      <Testimonials />
       <Blog />
       <Values />
+      <FAQ />
       <CTA />
+      <Newsletter />
       <Maps />
       <Footer />
       <AIChat />

@@ -34,8 +34,8 @@ export default function Header() {
             <Link href="/doctors" className="text-foreground hover:text-primary transition-colors">
               {t("doctors")}
             </Link>
-            <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
-              {t("about")}
+            <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
+              {t("contact")}
             </Link>
           </nav>
 
@@ -64,8 +64,8 @@ export default function Header() {
             <Link href="/doctors" className="text-foreground hover:text-primary transition-colors">
               {t("doctors")}
             </Link>
-            <Link href="/#about" className="text-foreground hover:text-primary transition-colors">
-              {t("about")}
+            <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
+              {t("contact")}
             </Link>
             <div className="py-2">
               <LanguageSelector />
