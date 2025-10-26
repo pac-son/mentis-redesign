@@ -30,7 +30,7 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
       {!isExpanded ? (
         // Collapsed view - just image and name
         <div className="p-6 text-center">
-          <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 overflow-hidden">
+          <div className="w-32 h-32 bg-linear-to-br from-primary to-accent rounded-full mx-auto mb-4 overflow-hidden">
             <img src={doctor.image || "/placeholder.svg"} alt={doctor.name} className="w-full h-full object-cover" />
           </div>
           <h3 className="text-lg font-semibold text-foreground mb-1">{doctor.name}</h3>
@@ -43,7 +43,7 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Image */}
             <div className="flex items-center justify-center">
-              <div className="w-40 h-40 bg-gradient-to-br from-primary to-accent rounded-lg overflow-hidden">
+              <div className="w-40 h-40 bg-linear-to-br from-primary to-accent rounded-lg overflow-hidden">
                 <img
                   src={doctor.image || "/placeholder.svg"}
                   alt={doctor.name}

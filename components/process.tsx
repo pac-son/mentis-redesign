@@ -50,7 +50,7 @@ export default function Process() {
 
                   {/* Connector line (hidden on last item) */}
                   {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-1/2 w-full h-1 bg-gradient-to-r from-primary to-accent transform translate-y-0 -z-10"></div>
+                    <div className="hidden md:block absolute top-8 left-1/2 w-full h-1 bg-linear-to-r from-primary to-accent transform translate-y-0 -z-10"></div>
                   )}
                 </div>
 

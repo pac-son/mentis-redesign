@@ -71,7 +71,7 @@ export default function FAQ() {
               >
                 <h3 className="text-lg font-semibold text-foreground text-left">{faq.question}</h3>
                 <ChevronDown
-                  className={`w-5 h-5 text-accent transition-transform flex-shrink-0 ${
+                  className={`w-5 h-5 text-accent transition-transform shrink-0 ${
                     openId === faq.id ? "rotate-180" : ""
                   }`}
                 />

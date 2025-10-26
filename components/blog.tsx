@@ -79,7 +79,7 @@ export default function Blog() {
               </div>
 
               {/* Content */}
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-6 flex flex-col grow">
                 {/* Category */}
                 <div className="mb-3">
                   <span className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
@@ -91,7 +91,7 @@ export default function Blog() {
                 <h3 className="text-xl font-semibold text-foreground mb-3 line-clamp-2">{post.title}</h3>
 
                 {/* Excerpt */}
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-grow line-clamp-3">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4 grow line-clamp-3">
                   {post.excerpt}
                 </p>
 

@@ -30,7 +30,7 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-r from-primary/10 to-accent/10">
+    <section className="py-20 md:py-32 bg-linear-to-r from-primary/10 to-accent/10">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Stay Informed</h2>
