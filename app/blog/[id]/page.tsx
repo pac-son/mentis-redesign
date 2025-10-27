@@ -19,7 +19,8 @@ interface BlogPost {
   image: string
 }
 
-export default function BlogPostPage({ params }: { params: { id: string } }) {
+export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
   const { t } = useLanguage()
 
   const blogPosts: Record<string, BlogPost> = {
@@ -165,7 +166,7 @@ Remember, seeking help is a sign of strength, not weakness. With appropriate sup
     },
   }
 
-  const post = blogPosts[params.id]
+  const post = blogPosts[id]
 
   if (!post) {
     return (

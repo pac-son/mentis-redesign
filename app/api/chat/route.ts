@@ -24,7 +24,6 @@ Always be empathetic, professional, and encourage users to book appointments or 
       system: systemPrompt,
       prompt: `${conversationContext}\nUser: ${message}`,
       temperature: 0.7,
-      maxTokens: 500,
     })
 
     return Response.json({ reply: text })
