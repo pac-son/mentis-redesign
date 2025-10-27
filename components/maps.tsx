@@ -36,7 +36,7 @@ export default function Maps() {
             {/* Address */}
             <div className="bg-card rounded-xl p-6 border border-border">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                   <MapPin className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ export default function Maps() {
             {/* Phone */}
             <div className="bg-card rounded-xl p-6 border border-border">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                   <Phone className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -66,7 +66,7 @@ export default function Maps() {
             {/* Email */}
             <div className="bg-card rounded-xl p-6 border border-border">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                   <Mail className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export default function Maps() {
             {/* Hours */}
             <div className="bg-card rounded-xl p-6 border border-border">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                   <Clock className="w-6 h-6 text-accent" />
                 </div>
                 <div>

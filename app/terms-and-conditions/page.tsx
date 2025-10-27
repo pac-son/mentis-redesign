@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
-      <div className="bg-gradient-to-r from-primary to-primary/80 text-background py-12">
+      <div className="bg-linear-to-r from-primary to-primary/80 text-background py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Terms and Conditions</h1>
           <p className="text-lg opacity-90">Last updated: January 2025</p>
