@@ -10,7 +10,7 @@ export default function Maps() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">Visit Us</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Find us at our clinic location in Lahore. We're here to support your mental health journey.
+            Find us at our clinic location in Karachi. We're here to support your mental health journey.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function Maps() {
           <div className="lg:col-span-2">
             <div className="rounded-xl overflow-hidden shadow-lg h-96 lg:h-full min-h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.5234567890!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMentis%20Clinic!5e0!3m2!1sen!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.5234567890!2d74.3587!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b6b6b6b6b%3A0x0!2sShop%2021%2C%20Tower%20H%2C%20Bahria%20Heights%2C%20Bahria%20Town%2C%20Karachi!5e0!3m2!1sen!2s!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -41,7 +41,9 @@ export default function Maps() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Address</h3>
-                  <p className="text-sm text-muted-foreground">Lahore, Pakistan</p>
+                  <p className="text-sm text-muted-foreground">
+                    Shop 21, Tower H, Bahria Heights, Bahria Town, Karachi, Sindh, Pakistan
+                  </p>
                 </div>
               </div>
             </div>
@@ -85,11 +87,9 @@ export default function Maps() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Hours</h3>
                   <p className="text-sm text-muted-foreground">
-                    Mon - Fri: 9 AM - 6 PM
+                    Mon - Sat: 10 AM - 7 PM
                     <br />
-                    Sat: 10 AM - 4 PM
-                    <br />
-                    Sun: Closed
+                    Sun: By Appointment Only
                   </p>
                 </div>
               </div>

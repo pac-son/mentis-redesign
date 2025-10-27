@@ -148,6 +148,14 @@ export default function Footer() {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-75">
             <p>© 2025 Mentis Clinic Asia. {t("copyright")}</p>
+            <div className="flex gap-6 text-sm">
+              <Link href="/terms-and-conditions" className="hover:opacity-100 transition-opacity">
+                Terms & Conditions
+              </Link>
+              <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity">
+                Privacy Policy
+              </Link>
+            </div>
             <div className="flex items-center gap-1">
               Made with <Heart className="w-4 h-4 text-accent" /> for mental health
             </div>
