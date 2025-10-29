@@ -3,8 +3,6 @@
 import type React from "react"
 
 import { useState } from "react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Mail, Phone, MapPin, Clock, CheckCircle } from "lucide-react"
@@ -44,9 +42,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      <Header />
-
+    <>
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-linear-to-br from-primary/10 to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,8 +199,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   )
 }
