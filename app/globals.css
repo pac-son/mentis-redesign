@@ -4,40 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color palette to match Mentis Clinic original design - turquoise primary with yellow accents */
+  /* Updated color palette for modern healthcare design */
   --background: oklch(0.98 0.01 240);
-  --foreground: oklch(0.15 0.05 240);
+  --foreground: oklch(0.2 0.02 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.05 240);
+  --card-foreground: oklch(0.2 0.02 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.05 240);
-  --primary: oklch(0.55 0.15 200);
+  --popover-foreground: oklch(0.2 0.02 240);
+  --primary: oklch(0.35 0.12 240);
   --primary-foreground: oklch(0.98 0.01 240);
-  --secondary: oklch(0.85 0.18 80);
-  --secondary-foreground: oklch(0.15 0.05 240);
+  --secondary: oklch(0.5 0.08 160);
+  --secondary-foreground: oklch(0.98 0.01 240);
   --muted: oklch(0.92 0.01 240);
   --muted-foreground: oklch(0.5 0.02 240);
-  --accent: oklch(0.65 0.2 50);
-  --accent-foreground: oklch(0.15 0.05 240);
+  --accent: oklch(0.55 0.1 140);
+  --accent-foreground: oklch(0.98 0.01 240);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0.01 240);
   --border: oklch(0.92 0.01 240);
   --input: oklch(0.96 0.01 240);
-  --ring: oklch(0.55 0.15 200);
-  --chart-1: oklch(0.55 0.15 200);
-  --chart-2: oklch(0.65 0.2 50);
+  --ring: oklch(0.35 0.12 240);
+  --chart-1: oklch(0.35 0.12 240);
+  --chart-2: oklch(0.55 0.1 140);
   --chart-3: oklch(0.5 0.08 160);
   --chart-4: oklch(0.6 0.08 200);
   --chart-5: oklch(0.45 0.1 180);
   --radius: 0.625rem;
   --sidebar: oklch(0.98 0.01 240);
-  --sidebar-foreground: oklch(0.15 0.05 240);
-  --sidebar-primary: oklch(0.55 0.15 200);
+  --sidebar-foreground: oklch(0.2 0.02 240);
+  --sidebar-primary: oklch(0.35 0.12 240);
   --sidebar-primary-foreground: oklch(0.98 0.01 240);
-  --sidebar-accent: oklch(0.65 0.2 50);
-  --sidebar-accent-foreground: oklch(0.15 0.05 240);
+  --sidebar-accent: oklch(0.55 0.1 140);
+  --sidebar-accent-foreground: oklch(0.98 0.01 240);
   --sidebar-border: oklch(0.92 0.01 240);
-  --sidebar-ring: oklch(0.55 0.15 200);
+  --sidebar-ring: oklch(0.35 0.12 240);
 }
 
 .dark {
@@ -47,32 +47,32 @@
   --card-foreground: oklch(0.95 0.01 240);
   --popover: oklch(0.2 0.02 240);
   --popover-foreground: oklch(0.95 0.01 240);
-  --primary: oklch(0.65 0.15 200);
+  --primary: oklch(0.65 0.12 240);
   --primary-foreground: oklch(0.15 0.02 240);
-  --secondary: oklch(0.85 0.18 80);
+  --secondary: oklch(0.6 0.08 160);
   --secondary-foreground: oklch(0.15 0.02 240);
   --muted: oklch(0.3 0.02 240);
   --muted-foreground: oklch(0.7 0.02 240);
-  --accent: oklch(0.75 0.2 50);
+  --accent: oklch(0.65 0.1 140);
   --accent-foreground: oklch(0.15 0.02 240);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.95 0.01 240);
   --border: oklch(0.3 0.02 240);
   --input: oklch(0.25 0.02 240);
-  --ring: oklch(0.65 0.15 200);
-  --chart-1: oklch(0.65 0.15 200);
-  --chart-2: oklch(0.75 0.2 50);
+  --ring: oklch(0.65 0.12 240);
+  --chart-1: oklch(0.65 0.12 240);
+  --chart-2: oklch(0.65 0.1 140);
   --chart-3: oklch(0.6 0.08 160);
   --chart-4: oklch(0.7 0.08 200);
   --chart-5: oklch(0.6 0.1 180);
   --sidebar: oklch(0.2 0.02 240);
   --sidebar-foreground: oklch(0.95 0.01 240);
-  --sidebar-primary: oklch(0.65 0.15 200);
+  --sidebar-primary: oklch(0.65 0.12 240);
   --sidebar-primary-foreground: oklch(0.15 0.02 240);
-  --sidebar-accent: oklch(0.75 0.2 50);
+  --sidebar-accent: oklch(0.65 0.1 140);
   --sidebar-accent-foreground: oklch(0.15 0.02 240);
   --sidebar-border: oklch(0.3 0.02 240);
-  --sidebar-ring: oklch(0.65 0.15 200);
+  --sidebar-ring: oklch(0.65 0.12 240);
 }
 
 @theme inline {
