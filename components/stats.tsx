@@ -1,8 +1,12 @@
+"use client"
+
+import CountUp from 'react-countup'
+
 export default function Stats() {
   const stats = [
-    { number: "30+", label: "Years of Experience" },
-    { number: "10+", label: "Specialist Psychologists" },
-    { number: "96%", label: "Patient Satisfaction" },
+    { number: 30, suffix: "+", label: "Years of Experience" },
+    { number: 10, suffix: "+", label: "Specialist Psychologists" },
+    { number: 96, suffix: "%", label: "Patient Satisfaction" },
   ]
 
   return (
@@ -11,7 +15,9 @@ export default function Stats() {
         <div className="grid md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.number}</p>
+              <p className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                <CountUp end={stat.number} suffix={stat.suffix} duration={2} />
+              </p>
               <p className="text-muted-foreground text-lg">{stat.label}</p>
             </div>
           ))}
