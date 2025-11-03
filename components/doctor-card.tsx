@@ -38,11 +38,11 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
           <p className="text-xs text-muted-foreground">Click to view details</p>
         </div>
       ) : (
-        // Expanded view - image on left, details on right
+        // Expanded view - image on top, details below
         <div className="p-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="flex flex-col">
             {/* Image */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mb-6">
               <div className="w-40 h-40 bg-linear-to-br from-primary to-accent rounded-lg overflow-hidden">
                 <img
                   src={doctor.image || "/placeholder.svg"}
