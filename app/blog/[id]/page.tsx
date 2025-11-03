@@ -1,10 +1,7 @@
-"use client"
-
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { useLanguage } from "@/lib/language-context"
 import { Calendar, User, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
@@ -21,7 +18,6 @@ interface BlogPost {
 
 export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const { t } = useLanguage()
 
   const blogPosts: Record<string, BlogPost> = {
     "1": {
