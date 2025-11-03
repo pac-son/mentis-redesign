@@ -1,5 +1,3 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, User, ArrowLeft } from "lucide-react"
@@ -167,7 +165,6 @@ Remember, seeking help is a sign of strength, not weakness. With appropriate sup
   if (!post) {
     return (
       <main className="min-h-screen bg-background">
-        <Header />
         <section className="py-20 md:py-32">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl font-bold text-foreground mb-4">Post Not Found</h1>
@@ -177,14 +174,12 @@ Remember, seeking help is a sign of strength, not weakness. With appropriate sup
             </Link>
           </div>
         </section>
-        <Footer />
       </main>
     )
   }
 
   return (
     <main className="min-h-screen bg-background">
-      <Header />
 
       {/* Hero Image */}
       <div className="h-96 overflow-hidden bg-muted">
@@ -262,7 +257,6 @@ Remember, seeking help is a sign of strength, not weakness. With appropriate sup
         </div>
       </article>
 
-      <Footer />
     </main>
   )
 }

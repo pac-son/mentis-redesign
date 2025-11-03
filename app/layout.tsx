@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Karachi",
     "Pakistan",
   ],
-  generator: "v0.app",
+  generator: "pac-son",
   openGraph: {
     title: "Mentis Clinic Asia - Mental Health & Neurodiversity Care",
     description: "Compassionate mental health and neurodiversity care for ADHD, Autism, and more.",
