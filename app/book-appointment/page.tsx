@@ -248,7 +248,7 @@ export default function BookAppointment() {
                 <br />
                 Email: info@mentisclinic.org
                 <br />
-                Location: Karachi, Pakistan
+                Location: Shop 21, Tower H, Bahria Heights, Bahria Town, Karachi, Sindh, Pakistan
               </p>
             </Card>
           </div>

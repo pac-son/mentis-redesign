@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/lib/language-context"
+import CountUp from 'react-countup'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -42,16 +43,18 @@ export default function Hero() {
             <div className="flex items-center gap-4 pt-4">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
-                  <div
+                  <img
                     key={i}
-                    className="w-10 h-10 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center text-white text-sm font-semibold border-2 border-background"
-                  >
-                    {i}
-                  </div>
+                    src={`/${i}.jpg`}
+                    alt={`Patient ${i}`}
+                    className="w-10 h-10 rounded-full object-cover border-2 border-background"
+                  />
                 ))}
               </div>
               <div>
-                <p className="font-semibold text-foreground">1,000+</p>
+                <p className="font-semibold text-foreground">
+                  <CountUp end={1000} suffix="+" duration={2} />
+                </p>
                 <p className="text-sm text-muted-foreground">Patients Helped</p>
               </div>
             </div>

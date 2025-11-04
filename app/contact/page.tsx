@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <MapPin className="w-6 h-6 text-accent" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Location</h3>
-              <p className="text-muted-foreground">Karachi, Pakistan</p>
+              <p className="text-muted-foreground">Shop 21, Tower H, Bahria Heights, Bahria Town, Karachi, Sindh, Pakistan</p>
             </Card>
 
             {/* Hours */}

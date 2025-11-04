@@ -67,7 +67,9 @@ export default function RootLayout({
               email: "info@mentisclinic.org",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Karachi",
+                streetAddress: "Shop 21, Tower H, Bahria Heights",
+                addressLocality: "Bahria Town, Karachi",
+                addressRegion: "Sindh",
                 addressCountry: "PK",
               },
               sameAs: [

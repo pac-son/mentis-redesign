@@ -54,7 +54,7 @@ export default function Blog() {
       author: "Dr. Amina Khan",
       date: "2024-10-05",
       category: "Mental Health",
-      image: "/mental-health-support.png",
+      image: "/mental-health-support.jpg",
     },
   ]
 
