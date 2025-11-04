@@ -7,8 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowLeft, Calendar, Clock, User, Mail, Phone } from "lucide-react"
 import Link from "next/link"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 
 export default function BookAppointment() {
   const [formData, setFormData] = useState({
@@ -74,7 +72,6 @@ export default function BookAppointment() {
 
   return (
     <main className="min-h-screen bg-background">
-      <Header />
 
       <section className="py-12 md:py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -255,7 +252,6 @@ export default function BookAppointment() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }
